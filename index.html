@@ -23,7 +23,7 @@
        <h2>Front-End-Developer <br>Designer <br></h2>
      </div>
      <div class="know_me">
-       <button type="button" name="button"><a href="#menu" >Get to know ME <br> <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span> <br></a></button>
+       <button class="button header"type="button" name="button"><a href="#menu" >Get to know ME <br> <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span> <br></a></button>
      </div>
      </div>
      </div>
@@ -90,34 +90,12 @@
    <div class="layout" id="contact">
      <h2>Contact</h2>
     <form action="http://formspree.io/ancentkitonyi.m@gmail.com" method="post">
-       <div class="class row">
-         <div class="a_row">
-           <label for="name">First Name:</label>
-           <input type="text" id="name" placeholder="Your first name*"/>
-         </div>
-         <br>
-         <div class="a_row">
-           <label for="name">Second Name:</label>
-           <input type="text" id="name" placeholder="Your second name*"/>
-         </div>
-         <br>
-       </div>
-       <div class="class row">
-         <div class="a_row">
-           <label for="mail">E-mail:</label>
-           <input type="email" id="mail" placeholder="Your email*">
-         </div>
-         <br>
-         <div class="a_row">
-           <textarea id="msg" placeholder="Your message*"></textarea>
-         </div>
-         <br>
-       </div>
-       <div class="a_row">
-         <button type="submit" value="Send data">Send Message</button>
-       </div>
-       <p><span>THANK YOU</span></p>
-     </form>
+           <input name="_subject" type="text" id="name" placeholder="Your Name*"/>
+           <input name="_replyto" type="email" id="mail" placeholder="Your Email*">
+           <textarea name="_fotmat" id="msg" placeholder="Your message*"></textarea>
+           <button name="_gotcha" type="submit" value="Send data">Send Message</button>
+    </form>
+     <p><span>THANK YOU</span></p>
    </div>
 
 
