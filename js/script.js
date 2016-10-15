@@ -27,9 +27,19 @@ $(window).scroll(function() {
     $(".sticky").removeClass("stuck");
   }
   });
-  $('button').click(function(){
-    $(this).slideDown('slow');
+
+    //added accordion
+  var allPanels = $('.accordion > dd').hide();
+
+  $('.accordion > dt > a').click(function() {
+    allPanels.slideUp();
+    $(this).parent().next().slideDown();
+    return false;
   });
+
+
+
+
 
 
 });

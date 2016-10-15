@@ -2090,11 +2090,13 @@ select {
   border-radius: 0 0 3px 3px; }
 
 .accordion-title {
+  color: #f000ff;
+  font-size: 35px;
+  font-family: "Kaushan Script"
   display: block;
   padding: 1.25rem 1rem;
   line-height: 1;
-  font-size: 0.75rem;
-  color: #2ba6cb;
+  /*font-size: 0.75rem;*/
   position: relative;
   border: 1px solid #e6e6e6;
   border-bottom: 0; }

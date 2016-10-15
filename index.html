@@ -10,7 +10,7 @@
      <link rel="stylesheet" href="css/bootstrap-theme.css" media="screen" title="no title" charset="utf-8">
 <!--     <link rel="stylesheet" href="css/normalise.css" media="screen" title="no title" charset="utf-8">-->
      <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
-     <link rel="icon" href="img/ancent1.jpg" />  
+     <link rel="icon" href="img/ancent1.jpg" />
   </head>
   <body>
                   <!--FIRST PAGE-->
@@ -33,23 +33,30 @@
                 <!--NAV BAR-->
     <nav id="menu" class="sticky" >
       <ul>
-        <li><a href="#intro">WELCOME</a></li>
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#portfolio">PORTFOLIO</a></li>
-        <li><a href="#contact">CONTACT</a></li>
+        <li class="li"><a href="#intro">WELCOME</a></li>
+        <li class="li"><a href="#about">ABOUT</a></li>
+        <li class="li"><a href="#portfolio">PORTFOLIO</a></li>
+        <li class="li"><a href="#contact">CONTACT</a></li>
       </ul>
     </nav>
                 <!--ABOUT-->
-   <div class="layout" id="about">
+   <div class="container" id="about">
      <div class="me">
-       <h2>About Me</h2>
-     <div class="userpic">
-       <img src="img/ancent.jpg" alt="" />
+       <div class="userpic">
+         <img src="img/ancent.jpg" alt="" />
+       </div>
+       <dl class="accordion">
+         <h2 class="accordion-title">ABOUT ME</h2>
+         <dt class="is-accordion-submenu-parent "><a href="" class="acc-head">My Choice</a></dt>
+          <dd class="accordion-content">Am fascinated in the coding world.<br>
+          I love creating beautiful and responsive websites.<br>
+          However, am also interested in designing.<br></dd>
+         <dt class="is-accordion-submenu-parent"><a href="" class="acc-head">Talent</a></dt>
+          <dd class="accordion-content">Whenever I'm not writing code ,you can find me practicing some calligraphy works.</dd>
+         <dt class="is-accordion-submenu-parent"><a href="" class="acc-head">Hobby</a></dt>
+          <dd class="accordion-content">I like playig both Table Tennis and Lawn Tennis</dd>
+       </dl>
      </div>
-     <div class="about_text">
-       <p>Am fascinated in the coding world.<br>I love creating beautiful and responsive websites.<br>However, am also interested in designing.<br><br>Whenever I'm not writing code ,you can find me practicing some calligraphy works.<br></p>
-     </div>
-   </div>
      <div class="skills">
        <h2>Skills</h2>
        <div class="row">
@@ -67,8 +74,8 @@
    </div>
 
                   <!--PORTFOLIO-->
-   <div class="layout" id="portfolio">
-     <h2>Portfolio</h2>
+   <div class="container" id="portfolio">
+     <h2>PORTFOLIO</h2>
        <div class="portfolio_pics" id="portfolio_pics">
          <img src="img/pw1.png" alt="" class="overlay" />
          <p><span>My First Website<span class='spacer'></span><br /><span class='spacer'></span><button type="button" name="button"><a href="ancentkitonyi.github.io/Personal_Website">View</a></button></span></p>
@@ -88,15 +95,23 @@
      </div>
 
                   <!--CONTACT-->
-   <div class="layout" id="contact">
-     <h2>Contact</h2>
+   <div class="container" id="contact">
+     <h2>CONTACT ME</h2>
      <form method="POST" action="https://formspree.io/ancentkitonyi.m@gmail.com">
        <input class="name" name="name" type="name" placeholder="Your name*" >
        <input class="name" type="email" name="email" placeholder="Your email*">
        <textarea class="message" name="message" placeholder="Your message*"></textarea>
        <button class="button hollow" type="submit" value="Send">Send</button>
      </form>
-     <p><span>THANK YOU</span></p>
+     <div class="socialbar">
+       <h2>follow me</h2>
+       <div><a href="https://facebook.com/vybzaleincient.kitonyi"><img title="Facebook" src="img/facebook.png" alt="Facebook" width="35" height="35" /></a> <a href="https://github.com/Ancentkitonyi"><img title="github" src="img/github.png" alt="Github" width="35" height="35" /></a>
+         <a href="www.instagram.com/Ancentdreezy"><img title="Instagram" src="img/instagram.png" alt="Instagram" width="35" height="35" /></a> <a href="https://ke.linkedin.com/in/ancentkitonyi"><img title="linkedin" src="img/linkedin.png" alt="Linkedin" width="35" height="35" /></a></div>
+     </div>
+     <div class="copyright">
+       <h5>ANCENT DREEZY .. 2016</h5>
+     </div>
+
    </div>
 
 
