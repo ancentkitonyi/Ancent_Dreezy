@@ -2,14 +2,14 @@ h1{
   font-size: 80px;
   text-align: center;
   text-transform: uppercase;
-  font-family: "Ewert";
+  font-family: "Ewert", serif;
   color:  #00f9ff;
 }
 h2 {
   color: #f000ff;
   font-size: 35px;
   text-align: center;
-  font-family: "Kaushan Script"
+  font-family: "Kaushan Script", serif;
 }
 a{
   color: #fff;
@@ -107,11 +107,11 @@ button :hover{
 }
 .icon img{
   float: left;
-  width: 110px;
-  height: 110px;
+  width: auto;
+  height: auto;
   border: 4px solid #fff;
-  border-radius: 100px;
-  margin-left: 17%;
+  box-shadow: 0px 0px 20px 10px rgba(0,0,0,.5);
+
 }
 
             /*PORTFOLIO*/
@@ -215,10 +215,11 @@ textarea.message {
   width: 80px;
   margin: 10px;
   border: 2px solid #fff;
+  box-shadow: 0px 0px 20px 10px rgba(0,0,0,1);
 
 }
-.copyright{
-  background: black;
+#footer{
+  background-color: #000;
   box-shadow: 0 0 13px 3px rgba(0,0,0,.5);
 
 }
