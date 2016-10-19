@@ -191,6 +191,7 @@ z-index: 0;
   font-family: inherit;
   font-size: 1em;
   float: left;
+  padding: 2.5% 5% 2.5% 5%;
 }
 
 .butFrame > img {
