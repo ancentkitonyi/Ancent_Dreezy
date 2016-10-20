@@ -120,43 +120,6 @@ button :hover{
 
             /*PORTFOLIO*/
 
-#portfolio_pics img {
-width: 100%;
-height: 100%;
-position: relative;
-z-index: 0;
-border: 2px solid rgba(0,0,0,.2);
-box-shadow: 0px 0px 20px 10px rgba(0,0,0,.5);
-
-}
-p span {
-color: white;
-font: bold 24px/45px Helvetica, Sans-Serif;
-letter-spacing: -1px;
-background: rgb(0, 0, 0); /* fallback color */
-background: rgba(0, 0, 0, 0.7);
-padding: 5px;
-margin: 0px;
-}
-p span.spacer {
-  padding: 0px;
-}
-.portfolio_pics {
-float: left;
-overflow: hidden;
-margin: 0;
-padding: 2.5% 5% 2.5% 5%;
-width: 50%;
-position: relative;
-z-index: 0;
-}
-.portfolio_pics p{
-  position: absolute;
-   top: 180px;
-   left: 0;
-   width: 100%;
-}
-**************
 .buttons {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -167,7 +130,6 @@ z-index: 0;
 }
 
 
-/* PASTE BELOW IN CSS */
 
 .buttons * {
   transition: all .5s ease;
@@ -192,36 +154,34 @@ z-index: 0;
   font-size: 1em;
   float: left;
   padding: 2.5% 5% 2.5% 5%;
+  text-align: center;
 }
 
 .butFrame > img {
   width: 100%;
   height: auto;
-  display: block;
 }
 
 .butHeading {
   position: absolute;
   bottom: 0px;
-  left: 0px;
   padding: 10px 15px 15px;
   font-size: 1.2em;
   color: #666;
-  width: 100%;
+  width: 80%;
   background: rgba(240, 240, 240, 1);
 }
 
 .butFrame:before {
   background: #111;
-  content: "Click Here";
+  content: "VIEW";
   position: absolute;
   bottom: -35px;
-  left: 0px;
   padding: 10px 15px;
   z-index: 1;
   color: #fff;
   font-size: 0.9em;
-  width: 100%;
+  width: 80%;
   transition: .5s;
 }
 
@@ -230,60 +190,15 @@ z-index: 0;
 
 .butFrame:hover:before {
   bottom: 0px;
-  padding: 25px 15px;
+  padding: 23% 20%;
+  /*padding: 25px 15px;*/
+  opacity: 0.9;
+  z-index: 1;
+  /*height: 90%;*/
 }
 
 
-/* MEDIA QUERIES */
-
-@media all and (max-width: 950px) and (min-width: 701px) {
-  .butFrame {
-    display: block;
-    width: 49%;
-  }
-}
-
-@media all and (max-width: 700px) and (min-width: 0px) {
-  .butFrame {
-    display: block;
-    width: 100%;
-  }
-}
-
-
-/*#portfolio_pics{
-  width:400px;
-  position:relative;
-  margin:auto;
-  transition: background-color 1s ease;
-}
-
-#portfolio_pics p{
-  display: none;
-  height:100%;
-  width:100%;
-  background-color:rgba(0,0,0,0.5);
-  position:absolute;
-  top:0;
-  left:0;
-  font-family:sans-serif;
-  text-align:center;
-  color:blue;
-  font-size:40px;
-  padding:30% 0 0;
-  margin:0;
-}
-
-#portfolio_pics:hover > p{
-  display:block;
-
-}
-
-#portfolio_pics img{
-  display: block;
-  width:100%;
-}*/
-************************
+          /*CONTACTS*/
 form {
     width: 100%;
     height: auto;
