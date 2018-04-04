@@ -269,3 +269,9 @@ textarea.message {
   box-shadow: 0 0 13px 3px rgba(0,0,0,.5);
 
 }
+:valid {
+    color: blue;
+}
+:invalid {
+    color: red;
+}
