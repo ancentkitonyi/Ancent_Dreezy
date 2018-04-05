@@ -31,21 +31,66 @@ button :hover{
 
               /*LANDING PAGE */
 
-.intro{
-  background-image: url(../img/hacker2.jpg );
-  background-size: cover;
-  z-index: -1;
+#home {
+    background: transparent url(../img/hacker2.jpg );
+    z-index: -1;
+    no-repeat center center fixed;
+    background-size: cover;
+    height: 855px;
 }
 .overlay{
   background-color: rgba(0,0,0,0.6);
   z-index: 0;
+  height: 855px;
 }
-.pages{
-  padding-top: 17%;
-  padding-bottom: 13%;
+.page h1 {
+  position: relative;
+  padding-top: 20%;
+  color: white;
+  text-shadow: 2px 1px 2px #000; /*horizontal vertical blur color*/
+  text-align: center;
+  font-family: times;
+  font-size: 4em;
 }
+.divider {
+  border-top: 0.5px solid #FFF09F;
+  border-bottom: 1px solid #FFF09F;
+  }
 .know_me{
   margin-top: 50px;
+}
+.rotation {
+  display: inline;
+  color: #f000ff;
+  font-size: 35px;
+  font-weight: 300;
+  text-align: center;
+  position: relative;
+}
+.rotation span {
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+	  animation: rotateWord 10s linear infinite 0s;
+  }
+
+.rotation span:nth-child(1) {
+	animation-delay: 0s;
+  }
+.rotation span:nth-child(2) {
+	animation-delay: 3s;
+  }
+.rotation span:nth-child(3) {
+	animation-delay: 6s;
+  }
+@keyframes rotateWord {
+    0% { opacity: 0; }
+    1% { opacity: 0; -webkit-transform: translateY(-30px); transform: translateY(-30px); }
+	2% { opacity: 1; -webkit-transform: translateY(0px); transform: translateY(0px);}
+    17% { opacity: 1; -webkit-transform: translateY(0px); transform: translateY(0px); }
+	20% { opacity: 0; -webkit-transform: translateY(30px); transform: translateY(30px); }
+	80% { opacity: 0; }
+    100% { opacity: 0; }
 }
 
               /*NAV*/
@@ -88,7 +133,6 @@ button :hover{
   display: block
 }
 
-
               /*ABOUT SECTION*/
 
 .container{
@@ -128,13 +172,9 @@ button :hover{
   -ms-flex-align: start;
   align-items: flex-start;
 }
-
-
-
 .buttons * {
   transition: all .5s ease;
 }
-
 .buttons {
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
@@ -143,7 +183,6 @@ button :hover{
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
-
 .butFrame {
   width: 50%;
   overflow: hidden;
@@ -156,12 +195,10 @@ button :hover{
   padding: 2.5% 5% 2.5% 5%;
   text-align: center;
 }
-
 .butFrame > img {
   width: 100%;
   height: auto;
 }
-
 .butHeading {
   position: absolute;
   bottom: 0px;
@@ -171,7 +208,6 @@ button :hover{
   width: 80%;
   background: rgba(240, 240, 240, 1);
 }
-
 .butFrame:before {
   background: #111;
   content: "VIEW";
@@ -184,10 +220,7 @@ button :hover{
   width: 80%;
   transition: .5s;
 }
-
-
 /* HOVER STYLES */
-
 .butFrame:hover:before {
   bottom: 0px;
   padding: 23% 20%;
@@ -197,8 +230,8 @@ button :hover{
   /*height: 90%;*/
 }
 
-
           /*CONTACTS*/
+
 form {
     width: 100%;
     height: auto;
